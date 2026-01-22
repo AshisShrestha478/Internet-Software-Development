@@ -1,0 +1,4 @@
+CMD:
+nslookup google.com			// look up internet server address and the one we requesting for
+
+ipconfig				// See your device Ip address
