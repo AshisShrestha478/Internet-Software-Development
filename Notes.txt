@@ -11,14 +11,14 @@ Port: there will be alot of server but where is it going to land which server
         they are 16 bits, well known port or reserved port has 1000 spot reserved   
 
 http default port is 80
-https default port is 433
+https default port is 443
 
 If we use private network then how come that i can communicate with the public site?
     NAT/PAT does it and router assign private address to device it is connected
 
 Path: identify the resource
 
-query will fiter out the data basically meta data and is done using ?para = parameter1
+query will filter out the data basically meta data and is done using ?para = parameter1
 
 200s are success
 300s are redirect (it say reissue our address to correct place)
