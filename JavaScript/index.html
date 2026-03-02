@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Click Updater</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #e9f2ff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #numberDisplay {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #357abd;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Click Updater</h1>
+
+    <div id="numberDisplay">0</div>
+
+    <button onclick="updateNumber()">Click me</button>
+
+    <script>
+        let totalClicks = 0;
+
+        function updateNumber() {
+            totalClicks++;
+            document.getElementById("numberDisplay").textContent = totalClicks;
+            console.log("Button clicked! Total clicks: " + totalClicks);
+        }
+    </script>
+
+</body>
+
+</html>

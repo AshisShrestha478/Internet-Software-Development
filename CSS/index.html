@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link id="layout-style" rel="stylesheet" href="layout1.css">
+    <!-- <link rel="stylesheet" href="layout2.css"> -->
+    <!-- <link rel="stylesheet" href="layout3.css"> -->
+
+    <style>
+        .layout-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .layout-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .layout-buttons button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>Large Header Text</h1>
+            <h3>Smaller Header Text</h3>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="nav">
+                <h3>Nav Bar</h3>
+                <ul>
+                    <li><a href="index1.html">Link 1</a></li>
+                    <li><a href="index2.html">Link 2</a></li>
+                    <li><a href="index3.html">Link 3</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <p>Main content, paragraph 1</p>
+                <p>Main content, paragraph 2</p>
+                <p>Main content, paragraph 3</p>
+            </div>
+
+            <div class="sidebar">
+                <h3>Sidebar</h3>
+                <p>stuff.</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Footer stuff, small text. All rights reserved, your mileage may vary, possible side effects include
+            dizziness,
+            bleeding from the eyes, death, etc. We cannot be held responsible for the things we are responsible for.
+        </div>
+    </div>
+
+    <div class="layout-buttons">
+        <button onclick="changeLayout('layout1.css')">Layout 1</button>
+        <button onclick="changeLayout('layout2.css')">Layout 2</button>
+        <button onclick="changeLayout('layout3.css')">Layout 3</button>
+    </div>
+
+    <script>
+        function changeLayout(cssFile) {
+            document.getElementById('layout-style').href = cssFile;
+        }
+    </script>
+</body>
+
+</html>
